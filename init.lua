@@ -1,3 +1,10 @@
+-- if vim.g.vscode then
+--   vim.keymap.set("", "<Space>", "<Nop>")
+--   vim.g.mapleader = " "
+-- end
+-- vim.api.nvim_set_keymap("n", "<leader><leader>", ':echo "Leader key works!"<CR>', { noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader><leader>", ':echo "Leader key works"<CR>')
+
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
 local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
