@@ -12,8 +12,8 @@ return {
         n = {
           ["<Leader><Leader>"] = ":echo 'Leader key works!'<CR>",
           ["<Leader>ff"] = "<CMD>Find<CR>",
-          ["<Leader>fw"] = "<CMD>call VSCodeNotify('workbench.action.findInFiles')<CR>",
-          ["<Leader>ls"] = "<CMD>call VSCodeNotify('workbench.action.gotoSymbol')<CR>",
+          ["<Leader>fw"] = function() require("vscode").action "workbench.action.findInFiles" end,
+          ["<Leader>ls"] = function() require("vscode").action "workbench.action.gotoSymbol" end,
         },
       },
     },
