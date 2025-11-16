@@ -19,6 +19,7 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.typescript" },
   -- ui app
   { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.recipes.neovide" },
