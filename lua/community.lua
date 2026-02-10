@@ -18,8 +18,11 @@ return {
   -- language
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.markdown" },
   -- ui app
   { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.recipes.neovide" },
