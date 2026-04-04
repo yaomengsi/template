@@ -18,7 +18,11 @@ return {
   -- ai completion
   { import = "astrocommunity.ai.opencode-nvim" },
   -- language
-  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.python.base" },
+  { import = "astrocommunity.pack.python.basedpyright" },
+  { import = "astrocommunity.pack.python.ruff" },
+  -- { import = "astrocommunity.pack.python.black" },
+  -- { import = "astrocommunity.pack.python.isort" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
