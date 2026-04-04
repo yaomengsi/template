@@ -11,6 +11,8 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.marks-nvim" },
   -- ai completion
