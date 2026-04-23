@@ -9,6 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.file-explorer.yazi-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
@@ -17,6 +18,8 @@ return {
   { import = "astrocommunity.motion.marks-nvim" },
   -- ai completion
   { import = "astrocommunity.ai.opencode-nvim" },
+  { import = "astrocommunity.ai.codex-nvim" },
+  { import = "astrocommunity.completion.blink-cmp" },
   -- language
   { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.python.basedpyright" },
@@ -29,8 +32,10 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.yaml" },
   -- ui app
   { import = "astrocommunity.recipes.ai" },
+  { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.recipes.vscode" },
 }
