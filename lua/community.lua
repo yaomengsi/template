@@ -9,6 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.utility.lua-json5" },
   { import = "astrocommunity.file-explorer.yazi-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
@@ -35,7 +36,15 @@ return {
   { import = "astrocommunity.pack.yaml" },
   -- ui app
   { import = "astrocommunity.recipes.ai" },
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.auto-session-restore" },
+  { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
+  -- { import = "astrocommunity.recipes.disable-borders" },
+  -- { import = "astrocommunity.recipes.disable-tabline" },
+  { import = "astrocommunity.recipes.heirline-clock-statusline" },
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
   { import = "astrocommunity.recipes.vscode" },
