@@ -36,7 +36,7 @@ return {
   { import = "astrocommunity.pack.yaml" },
   -- ui app
   { import = "astrocommunity.recipes.ai" },
-  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
+  -- { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
   -- { import = "astrocommunity.recipes.disable-borders" },
