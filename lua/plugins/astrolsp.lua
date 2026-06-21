@@ -48,6 +48,33 @@ return {
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
     config = {
       -- ["*"] = { capabilities = {} }, -- modify default LSP client settings such as capabilities
+      clangd = {
+        mason = false, -- Skip Mason installation
+        capabilities = {
+          offsetEncoding = "utf-8", -- 修复部分 C++ 库编码报错
+        },
+        cmd = {
+          "clangd", -- Use system clangd (from the PATH env variable)
+          -- "/usr/sbin/clangd", -- Use system clangd (from the PATH env variable)
+          "--background-index", -- 启用后台索引，加快跳转速度
+          "--compile-commands-dir=.", -- 优先寻找 compile_commands.json
+          "--completion-style=detailed", -- 补全细节展示（还原微软风格）
+          "--suggest-missing-includes", -- 自动建议缺失的头文件
+          "--all-scopes-completion=true", -- 开启全局作用域补全
+          "--header-insertion=iwyu", -- 智能引入头文件 (Include-What-You-Use)
+          "--clang-tidy", -- 开启 Clang-Tidy 代码检查
+          "--pch-storage=memory", -- PCH 存放在内存中，加快加载速度
+          "--all-scopes-completion", -- 补全所有命名空间下的符号
+          "--fallback-style=llvm", -- 默认代码格式化风格
+          -- "--query-driver=/usr/bin/clang++,/usr/bin/g++", -- 允许编译器驱动的外部路径，支持交叉编译或自定义工具链
+          "--limit-references=0",
+        },
+        init_options = {
+          clangdFileStatus = true, -- 启用文件状态追踪
+          usePlaceholders = true, -- 补全函数时自动生成占位符（如按 Tab 跳转参数）
+          completeUnimported = true, -- 补全未导入的头文件对应的函数
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
